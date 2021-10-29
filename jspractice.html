@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Generator</title>
+</head>
+<body>
+    <input type="number" id="n"><br><br>
+    <input type="number" id="r"><br><br>
+    <button type="button" onclick="table(document.getElementById('n').value,document.getElementById('r').value)">Generate</button><br><br>
+    <script>
+    function table(n,r){
+        for(let i=1;i<=r;i++){
+            document.write(n+" X "+i+" = "+n*i+"<br></br>")
+        }
+    }
+    </script>
+</body>
+</html>
